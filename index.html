@@ -72,7 +72,7 @@
       opacity: 0.9;
     }
 
-    .container {
+      .container {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
@@ -86,6 +86,7 @@
       border-radius: 12px;
       padding: 2rem;
       animation: fadeIn 1.2s ease-in-out;
+      max-width: 400px;
     }
 
     .section-title {
@@ -94,11 +95,13 @@
     }
 
     .message-me {
+      flex:auto;
       background: rgba(255, 255, 255, 0.1);
       padding: 2rem;
-      margin: 2rem;
+      margin: 0rem;
       text-align: center;
       border-radius: 12px;
+  
     }
 
     input, textarea {
@@ -181,14 +184,14 @@
       <p>Just some projects I threw together so this site doesn't look like an empty fridge.</p>
       <a href="pages/projects/projects.html" class="button">View Projects</a>
     </section>
-
+ <br>
     <section class="cybersecurity">
       <div class="section-title">Cybersecurity Lab</div>
       <p>COMING SOON: A deep dive into my cybersecurity experiments, tools, and demos.</p>
       <a href="pages/cstaff.html" class="button">Cyber Stuff</a>
     </section>
-  </div>
-
+   </div>
+<br>
   <section class="message-me">
     <h2>Message Me</h2>
     <form>
@@ -198,7 +201,8 @@
       <button type="submit">Send Message</button>
     </form>
   </section>
-  </div>
+
+  <br>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
       const texts = document.querySelectorAll(".fallingText");
