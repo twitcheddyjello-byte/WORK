@@ -44,7 +44,7 @@
   .wrapper {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0 2rem;
+      padding: 0 1rem;
     }
     header {
       text-align: center;
@@ -156,14 +156,15 @@
 
     @media (max-width: 768px) {
  .wrapper {
-    padding-inline: 1.5rem;   /* reduce side padding */
+    padding-inline: 1.5rem;
+    transform: translateX(-0.5rem);   /* reduce side padding */
   }
 
   .container {
     flex-direction: column;
     align-items: stretch;
     padding-left: 2rem;
-    padding-right: 6rem;
+    padding-right: 5rem;
   }
 
   .projects,
