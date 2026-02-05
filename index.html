@@ -86,7 +86,6 @@
       border-radius: 12px;
       padding: 2rem;
       animation: fadeIn 1.2s ease-in-out;
-      max-width: 400px;
     }
 
     .section-title {
@@ -156,15 +155,22 @@
     }
 
     @media (max-width: 768px) {
+ .wrapper {
+    padding-inline: 1.5rem;   /* reduce side padding */
+  }
+
   .container {
     flex-direction: column;
     align-items: stretch;
+    padding-left: 2rem;
+    padding-right: 6rem;
   }
 
   .projects,
   .cybersecurity {
     width: 100%;
     max-width: 100%;
+    margin: 0 auto;
     flex: 0 0 auto;
   }
 }
@@ -175,7 +181,7 @@
   <div class="wrapper">
 
     <!-- Background Floating Words -->
-  <div id="backgroundText">
+   <div id="backgroundText">
     <div class="fallingText">JAVASCRIPT</div>
     <div class="fallingText">Nodejs</div>
     <div class="fallingText">MongoDB</div>
@@ -183,9 +189,9 @@
     <div class="fallingText">Powershell</div>
     <div class="fallingText">Charge.io</div>
     <div class="fallingText">Focus</div>
-  </div>
+   </div>
 
-  <!-- Main Portfolio Content -->
+   <!-- Main Portfolio Content -->
 
   <header>
     <img src="images/person_1.jpg" alt="Profile Picture">
